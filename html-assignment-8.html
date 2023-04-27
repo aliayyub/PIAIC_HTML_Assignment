@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+		}
+
+		nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: auto;
+			padding: 20px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			max-width: 500px;
+			margin: auto;
+			padding: 20px;
+			background-color: #eee;
+			border-radius: 5px;
+		}
+
+		label {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		input {
+			margin-bottom: 10px;
+			padding: 5px;
+			border-radius: 3px;
+			border: none;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+			border-radius: 3px;
+			margin-top: 10px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
+		<a href="#login">Login</a>
+	</nav>
+	<div class="container">
+		<h1>Welcome to my website</h1>
+		<section id="about">
+			<h2>About</h2>
+			<p>this is my first web page i am using html and i am making web pages after lerning.</p>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<form action="#">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email">
+				<label for="message">Message</label>
+				<textarea id="message" name="message"></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+		<section id="login">
+			<h2>Login</h2>
+			<form action="#">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password">
+				<input type="submit" value="Login">
+			</form>
+		</section>
+	</div>
+</body>
+</html>
